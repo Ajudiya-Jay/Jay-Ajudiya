@@ -2,6 +2,7 @@ import React from "react";
 import { FaBars, FaReact } from "react-icons/fa";
 import { HiX } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import './styles.scss';
 const data = [
     {
         label: 'Home',
@@ -41,11 +42,11 @@ const NavBar = () => {
                         <FaReact size={30} />
                     </Link>
                 </div>
-                <ul className="navbar__container__menu">
+                <ul className= {`navbar__container__menu ${toggleIcon ? '' : 'active'} `} >
                     {
                         data.map((item, index) => (
                             <li key={index} className="navbar__container__menu__item">
-                                <Link to={item.to} className="navbar__container__menu__item__link">
+                                <Link to={item.to} className="navbar__container__menu__item__links">
                                     {item.label}
                                 </Link>
                             </li>

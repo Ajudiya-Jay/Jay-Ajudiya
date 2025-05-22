@@ -1,0 +1,94 @@
+.navbar{
+    background-color: var(--yellow-theme-nav-background-color);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+
+    &__container{
+        width: 100%;
+        height: inherit;
+        display: flex;
+        padding: 0px 20px;
+        align-items: center;
+
+        &__logo{
+            cursor: pointer;
+            color: var(--yellow-theme-main-color);
+        }
+
+        &__menu{
+            display: flex;
+            list-style: none;
+            text-align: center;
+
+            &__item{
+                line-height: 40px;
+                margin-right: 1.5rem;
+                font-size: 1.6rem;
+            
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 3px;
+                    background: transparent;
+                    transition: all 0.3s ease-in-out;
+                }
+                &:hover::after{
+                    width: 100%;
+                    background: var(--yellow-theme-main-color);
+                }
+
+                &__links{
+                    text-decoration: none;
+                    color: var(--yellow-theme-main-color);
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+.nav-icon{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar__container{
+        justify-content: space-between;
+        padding: 0px 10px;
+    }
+
+    .navbar__container__menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -110%;
+        opacity: 1;
+        transition: all 0.5s ease;
+
+        &.active{
+            background: #181818;
+            left: 0;
+            opacity: 1;
+        }
+
+        &__item{
+            border-bottom: 1px solid #282828;
+            margin: 0;
+            padding: 29px 0;
+        }
+    }
+
+    .nav-icon{
+        display: block;
+        color: var(--yellow-theme-main-color);
+        cursor: pointer;
+        padding-right: 20px;
+    }
+}
