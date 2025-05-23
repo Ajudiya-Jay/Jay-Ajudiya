@@ -1,10 +1,15 @@
 import React from "react";
+import { BsInfoCircleFill } from "react-icons/bs";
+import PageHeaderContent from "../../components/pageHeaderContent";
 
-const Resume= () => {
+const Contact= () => {
   return (
-    <div >
-      Resume page
-    </div>
+    <section id="contact" className="contact" >
+      <PageHeaderContent
+        headerText="Contact Me"
+        icon={<BsInfoCircleFill size={40} />}
+      />
+    </section>
   );
 }
-export default Resume;
+export default Contact;
