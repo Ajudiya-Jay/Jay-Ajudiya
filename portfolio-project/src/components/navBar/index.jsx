@@ -30,7 +30,7 @@ const data = [
     }
 ]
 const NavBar = () => {
-    const  [toggleIcon, setToggleIcon] = React.useState(false);
+    const [toggleIcon, setToggleIcon] = React.useState(false);
     const handleToggleIcon = () => {
         setToggleIcon(!toggleIcon);
     }
@@ -42,7 +42,7 @@ const NavBar = () => {
                         <FaReact size={30} />
                     </Link>
                 </div>
-                <ul className= {`navbar__container__menu ${toggleIcon ? '' : 'active'} `} >
+                <ul className={`navbar__container__menu ${toggleIcon ? '' : 'active'} `} >
                     {
                         data.map((item, index) => (
                             <li key={index} className="navbar__container__menu__item">

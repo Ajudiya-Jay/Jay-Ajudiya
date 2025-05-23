@@ -8,15 +8,15 @@
     position: sticky;
 
     &__container{
+        display: flex;
+        align-items: center;
         width: 100%;
         height: inherit;
-        display: flex;
         padding: 0px 20px;
-        align-items: center;
-
+        flex: 1;
         &__logo{
-            cursor: pointer;
             color: var(--yellow-theme-main-color);
+            cursor: pointer;
         }
 
         &__menu{
@@ -28,23 +28,24 @@
                 line-height: 40px;
                 margin-right: 1.5rem;
                 font-size: 1.6rem;
-            
+
                 &::after{
                     content: '';
                     display: block;
-                    width: 0;
                     height: 3px;
+                    width: 0;
                     background: transparent;
-                    transition: all 0.3s ease-in-out;
+                    transition: all 0.5s ease;
                 }
+
                 &:hover::after{
                     width: 100%;
                     background: var(--yellow-theme-main-color);
                 }
 
                 &__links{
-                    text-decoration: none;
                     color: var(--yellow-theme-main-color);
+                    text-decoration: none;
                     padding: 0.5rem;
                 }
             }
@@ -56,12 +57,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 768px) {
-    .navbar__container{
-        justify-content: space-between;
-        padding: 0px 10px;
-    }
-
+@media only screen and (max-width : 768px){
     .navbar__container__menu{
         display: flex;
         flex-direction: column;
@@ -75,21 +71,21 @@
 
         &.active{
             background: #181818;
-            left: 0;
+            left: 0px;
             opacity: 1;
         }
 
         &__item{
             border-bottom: 1px solid #282828;
-            margin: 0;
-            padding: 29px 0;
+            margin: 0px;
+            padding: 20px 0px; 
         }
     }
 
     .nav-icon{
         display: block;
-        color: var(--yellow-theme-main-color);
         cursor: pointer;
+        color: var(--yellow-theme-main-color);
         padding-right: 20px;
     }
 }
