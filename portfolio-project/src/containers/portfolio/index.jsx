@@ -102,7 +102,7 @@ const Portfolio = () => {
               onMouseLeave={() => handleHover(null)}
             >
               <div className="portfolio__content__cards__item__img-wrapper">
-                <a>
+                <a href={item.link || "#"} target="_blank" rel="noopener noreferrer">
                   <img alt="dummy data" src={item.image} />
                 </a>
               </div>
