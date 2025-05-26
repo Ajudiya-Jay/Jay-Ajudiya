@@ -1,6 +1,6 @@
 import React from "react";
 import PageHeaderContent from "../../components/pageHeaderContent";
-import { BsInfoCircleFill } from "react-icons/bs";
+import { FaFolderOpen } from "react-icons/fa";
 import ImageOne from "../../images/image1.png";
 import ImageTwo from "../../images/image2.png";
 import ImageThree from "../../images/image3.png";
@@ -79,7 +79,7 @@ const Portfolio = () => {
     <section id="portfolio" className="portfolio">
       <PageHeaderContent
         headerText="My Portfolio"
-        icon={<BsInfoCircleFill size={40} />}
+        icon={<FaFolderOpen size={40} />}
       />
       <div className="portfolio__content">
         <ul className="portfolio__content__filter">

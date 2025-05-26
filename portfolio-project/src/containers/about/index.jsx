@@ -1,5 +1,5 @@
 import React from "react";
-import { BsInfoCircleFill } from "react-icons/bs";
+import { FaUserCircle } from "react-icons/fa";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { Animate } from "react-simple-animate";
 import "./styles.scss";
@@ -20,7 +20,7 @@ const About = () => {
     <section id="about" className="about" >
       <PageHeaderContent
         headerText="About Me"
-        icon={<BsInfoCircleFill size={40} />}
+        icon={<FaUserCircle size={40} />}
       />
       <div className="about__content">
         <div className="about__content__personalWrapper">
