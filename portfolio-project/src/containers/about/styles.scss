@@ -43,13 +43,13 @@
                     border-bottom: 2px solid var(--yellow-theme-main-color);
                     position: relative;
                     display: inline-block;
-                    margin-bottom: 16px;
-                    padding-bottom: 5px;
+                    
                     color: var(--yellow-theme-sub-text-color);
                 }
 
                 span.value {
                     border: none;
+                    margin-left: 16px;
                 }
             }
         }

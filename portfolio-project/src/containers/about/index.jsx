@@ -9,12 +9,11 @@ import { FaDev, FaDatabase } from "react-icons/fa";
 const personDetails = [
   { label: "Name", value: "    Jay Ajudiya" },
   { label: "Age", value: "   25" },
-  { label: "Location", value: "  Gujarat, India" },
-  { label: "Email", value: "   jaysureshbhaiajudiya@gmail.com" },
-  { label: "Phone", value: "   +91 1234567890" },
+  { label: "Location", value: "  Toronto, Canada" },
+  { label: "Email", value: "   jaysureshbhaiajudiya@gmail.com" }
 ];
 
-const jobSummary = 'Seasoned software engineer with a strong background in web development and a passion for creating innovative solutions. Proficient in JavaScript, React, and Node.js, with experience in building scalable applications. Seeking to leverage my skills and expertise to contribute to a dynamic team and drive impactful projects.';
+// const jobSummary = 'I am a passionate and detail-oriented Java Developer with a solid foundation in object-oriented programming and backend development. With hands-on experience in Java, Spring Boot, RESTful APIs, and relational databases, I build scalable and efficient web applications. I enjoy solving complex technical challenges and am always eager to learn new technologies.My focus is on writing clean, maintainable code and delivering high-quality software solutions. I am particularly interested in full-stack application development and continuously improving my skills in Java, SQL, Microservices, Docker, and Cloud platforms like AWS.I am seeking opportunities where I can contribute to impactful projects, collaborate with talented teams, and grow as a professional software engineer in a dynamic environment.';
 const About = () => {
   return (
     <section id="about" className="about" >
@@ -32,7 +31,11 @@ const About = () => {
             end={{ transform: "translateX(0px)" }}>
 
             <h3>  Software Developer</h3>
-            <p>{jobSummary}</p>
+            <p>
+  I am a passionate and detail-oriented <strong>Java Developer</strong> with a solid foundation in object-oriented programming and backend development. With hands-on experience in <strong>Java, Spring Boot, RESTful APIs, and relational databases</strong>, I build scalable and efficient web applications. I enjoy solving complex technical challenges and am always eager to learn new technologies. <br /><br />
+  My focus is on writing clean, maintainable code and delivering high-quality software solutions. I am particularly interested in <strong>full-stack application development</strong> and continuously improving my skills in <strong>Java, SQL, Microservices, Docker</strong>, and <strong>Cloud platforms like AWS</strong>. <br /><br />
+  I am seeking opportunities where I can contribute to impactful projects, collaborate with talented teams, and grow as a professional software engineer in a dynamic environment.
+</p>
           </Animate>
           <Animate
             play
@@ -44,7 +47,7 @@ const About = () => {
             <ul>
               {personDetails.map((item, i) => (
                 <li key={i}>
-                  <span className="title">{item.label}</span>
+                  <span className="title">{item.label}:</span>
                   <span className="value">{item.value}</span>
                 </li>
               ))}
