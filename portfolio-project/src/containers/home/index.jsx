@@ -26,7 +26,7 @@ const Home = () => {
         start={{ transform: "translateY(550px)" }}
         end={{ transform: "translateY(0px)" }}> 
       <div className="home__contact-me">
-        <button onClick={handleNavigateToContactMePage}>  Hire Me</button>
+        <button onClick={handleNavigateToContactMePage}>  Contact Me</button>
       </div>
       </Animate>
     </section>

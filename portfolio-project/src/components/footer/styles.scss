@@ -1,7 +1,43 @@
 .footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 0;
   text-align: center;
-  padding: 1rem;
-  font-size: 1.4rem;
-  background-color: #1d1d1d;
-  color: #ffffff;
+
+  &__content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  h4 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--yellow-theme-main-color);
+  }
+
+  p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+
+  &__icons {
+    margin: 20px 0;
+
+    a {
+      margin: 0 10px;
+      font-size: 1.8rem;
+      color: var(--yellow-theme-main-color);
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  &__copyright {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 20px;
+  }
 }
