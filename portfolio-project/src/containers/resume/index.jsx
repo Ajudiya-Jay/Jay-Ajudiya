@@ -5,7 +5,7 @@ import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeli
 import { data } from "./utils";
 import "./styles.scss";
 import "react-vertical-timeline-component/style.min.css";
-import {MdWork} from 'react-icons/md';
+import { MdWork, MdSchool } from 'react-icons/md';
 const Contact = () => {
   return (
     <section id="resume" className="resume" >
@@ -27,19 +27,20 @@ const Contact = () => {
                   key={i}
                   className="timeline__experience__vertical-timeline-element"
                   contentStyle={{ background: "none", color: "var(--yellow-theme-sub-text-color)", border: "1.5px solid var(--yellow-theme-main-color)" }}
-                  date="2020 - Present"
-                  icon={<MdWork/>}
+                  icon={<MdWork />}
                   iconStyle={{ background: "#181818", color: "var(--yellow-theme-main-color)" }}>
                   <div className="vertical-timeline-element-title-wrapper">
                     <h3 className="vertical-timeline-element-title">
                       {item.title}
                     </h3>
                     <h4 className="vertical-timeline-element-subtitle">
-                      {item.subtitle}
+                      {item.company} - {item.location}
                     </h4>
-                    
                   </div>
                   <p className="vertical-timeline-element-paragraph">{item.description}</p>
+                  <p className="vertical-timeline-element-paragraph">
+                    {item.startDate} - {item.endDate}
+                  </p>
                 </VerticalTimelineElement>
               ))
             }
@@ -58,8 +59,8 @@ const Contact = () => {
                   key={i}
                   className="timeline__education__vertical-timeline-element"
                   contentStyle={{ background: "none", color: "var(--yellow-theme-sub-text-color)", border: "1.5px solid var(--yellow-theme-main-color)" }}
-                  date="2020 - Present"
-                  icon={<MdWork/>}
+
+                  icon={<MdSchool />}
                   iconStyle={{ background: "#181818", color: "var(--yellow-theme-main-color)" }}>
                   <div className="vertical-timeline-element-title-wrapper">
                     <h3 className="vertical-timeline-element-title">
@@ -70,8 +71,11 @@ const Contact = () => {
                     </h4>
                   </div>
                   <p className="vertical-timeline-element-paragraph">
-                      {item.graduationDate}
-                    </p>
+                    {item.location}
+                  </p>
+                  <p className="vertical-timeline-element-paragraph">
+                    {item.graduationDate}
+                  </p>
                 </VerticalTimelineElement>
               ))
             }
