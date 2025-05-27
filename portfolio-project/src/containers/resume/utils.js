@@ -27,7 +27,7 @@ export const data = {
             graduationDate: "Dec 2024"
         },
         {
-            degree: "Bachelor of Science in Computer Science",
+            degree: "Bachelor of Engineering in Computer Science",
             institution: "Shantilal Shah Engineering College",
             location: "Bhavnagar, Gujarat",
             graduationDate: "May 2021"

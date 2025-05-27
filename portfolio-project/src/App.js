@@ -10,6 +10,7 @@ import Contact from './containers/contact';
 import Skills from './containers/skills';
 import Resume from './containers/resume';
 import NavBar from './components/navBar';
+import Footer from './components/footer';
 import particles from './utils/particles';
 
 function App() {
@@ -44,6 +45,8 @@ function App() {
           <Route path="/resume" element={<Resume />} />
         </Routes>
       </div>
+      {/* footer */}
+      <Footer/>
     </div>
   );
 }
