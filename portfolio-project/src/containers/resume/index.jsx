@@ -6,12 +6,25 @@ import { data } from "./utils";
 import "./styles.scss";
 import "react-vertical-timeline-component/style.min.css";
 import { MdWork, MdSchool } from 'react-icons/md';
-const Contact = () => {
+const Resume = () => {
   return (
     <section id="resume" className="resume" >
+
       <PageHeaderContent
         headerText="My Resume"
-        icon={<HiDocumentText size={40} />}
+        icon={
+          <a
+            href="https://drive.google.com/file/d/1un-QSSg44HfHwU7e7d8BpitEGe5gJbGt/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="resume-download-link"
+          >
+            <div className="resume-icon-wrapper">
+              <HiDocumentText size={40} />
+              <span className="resume-download-text">Click here to download my resume</span>
+            </div>
+          </a>
+        }
       />
       <div className="timeline">
         <div className="timeline__experience">
@@ -85,4 +98,4 @@ const Contact = () => {
     </section>
   );
 }
-export default Contact;
+export default Resume;
