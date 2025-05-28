@@ -14,7 +14,7 @@ const handleSubmit = async (e) => {
   };
 
   try {
-    const response = await fetch("http://localhost:8888/api/contact", {
+    const response = await fetch("https://jay-ajudiya.vercel.app/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
