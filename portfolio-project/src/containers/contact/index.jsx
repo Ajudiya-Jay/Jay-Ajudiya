@@ -4,6 +4,34 @@ import { MdContactMail } from "react-icons/md";
 import { Animate } from "react-simple-animate";
 import "./styles.scss";
 
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const data = {
+    name: e.target.name.value,
+    email: e.target.email.value,
+    description: e.target.description.value,
+  };
+
+  try {
+    const response = await fetch("http://localhost:8888/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+      alert("Message sent successfully!");
+      e.target.reset();
+    } else {
+      alert("Failed to send message.");
+    }
+  } catch (err) {
+    console.error(err);
+    alert("Server error");
+  }
+};
+
 const Contact = () => {
   return (
     <section id="contact" className="contact">
@@ -36,6 +64,10 @@ const Contact = () => {
             transform: "translateX(0px)",
           }}
         >
+          <form
+            className="contact__content__form"
+            onSubmit={handleSubmit}
+          >
           <div className="contact__content__form">
             <div className="contact__content__form__controlswrapper">
               <div>
@@ -75,6 +107,7 @@ const Contact = () => {
             </div>
             <button>Submit</button>
           </div>
+          </form>
         </Animate>
       </div>
     </section>
