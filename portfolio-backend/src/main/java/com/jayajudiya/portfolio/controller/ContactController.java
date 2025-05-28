@@ -5,7 +5,7 @@ import com.jayajudiya.portfolio.repository.ContactRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "https://jay-ajudiya.vercel.app/") // Or restrict to your React domain
+@CrossOrigin(origins = "https://jay-ajudiya.vercel.app") // Or restrict to your React domain
 @RestController
 @RequestMapping("/api/contact")
 public class ContactController {
