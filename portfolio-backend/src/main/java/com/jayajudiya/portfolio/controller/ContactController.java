@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin(origins = "https://jay-ajudiya.vercel.app") // Or restrict to your React domain
 @RestController
-@PostMapping("/api/contact")
+@RequestMapping("/api/contact")
 public class ContactController {
 
     @Autowired
