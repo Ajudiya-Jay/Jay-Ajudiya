@@ -1,7 +1,7 @@
 export const data = {
     experience: [
         {
-            title: "Magento Developer",
+            title: "Software Developer",
             company: "Sinelogix Technologies",
             location: "Vadodara, India",
             startDate: "Jul 2022",
@@ -10,7 +10,7 @@ export const data = {
                 "Led the development of a full-scale e-commerce project from scratch for a key client. Implemented responsive front-end features using React.js and enhanced backend functionality with PHP and MySQL. Integrated REST and SOAP APIs, payment gateways, and improved site performance through AJAX optimization and Docker-based deployment. Worked with AWS services to enhance scalability and reliability of the platform."
         },
         {
-            title: "Magento Developer",
+            title: "Software Developer",
             company: "Rock Technolabs",
             location: "Ahmedabad, India",
             startDate: "Apr 2021",
@@ -21,9 +21,9 @@ export const data = {
     ],
     education: [
         {
-            degree: "Master in Computer Science",
-            institution: "Lakehead University",
-            location: "Thunder Bay, Ontario",
+            degree: "Post Graduate Diploma in Software Engineering Technologies",
+            institution: "Centtennial College",
+            location: "Toronto, Ontario",
             graduationDate: "Dec 2024"
         },
         {
