@@ -14,7 +14,7 @@ const Resume = () => {
         headerText="My Resume"
         icon={
           <a
-            href="https://drive.google.com/file/d/1GiG4ZNHACOY1MoHQDSS3W4qstQkd9v56/view?usp=sharing"
+            href="https://drive.google.com/file/d/1v4VZHyvZxGiaGgDEPZ1dJNfnIwvzFdEv/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="resume-download-link"
