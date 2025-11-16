@@ -32,10 +32,14 @@ const About = () => {
 
             <h3>  Software Developer</h3>
             <p>
-  I am a passionate and detail-oriented <strong>Java Developer</strong> with a solid foundation in object-oriented programming and backend development. With hands-on experience in <strong>Java, Spring Boot, RESTful APIs, and relational databases</strong>, I build scalable and efficient web applications. I enjoy solving complex technical challenges and am always eager to learn new technologies. <br /><br />
-  My focus is on writing clean, maintainable code and delivering high-quality software solutions. I am particularly interested in <strong>full-stack application development</strong> and continuously improving my skills in <strong>Java, SQL, Microservices, Docker</strong>, and <strong>Cloud platforms like AWS</strong>. <br /><br />
-  I am seeking opportunities where I can contribute to impactful projects, collaborate with talented teams, and grow as a professional software engineer in a dynamic environment.
-</p>
+              As a Magento Developer at Sinelogix Technologies, I have been instrumental in enhancing e-commerce platforms by optimizing site performance and implementing REST APIs. My recent projects include the successful migration of Jaypore.com from Magento 1 to Magento 2, where I ensured zero data loss and minimal downtime, showcasing my expertise in large-scale project management and data consistency.
+              <br /><br />
+              Previously, I honed my skills at Rock Technolabs, where I developed custom Magento 2 extensions that significantly increased client engagement. My educational background includes a Postgraduate degree in Software Engineering Technology from Centennial College and a Bachelor of Engineering in Information Technology from Gujarat Technological University, providing a strong foundation in web technologies and software development.
+              <br /><br />
+              I possess a robust set of technical skills, including Magento 2 development, PHP programming, and Node.js, complemented by software knowledge in Git, Docker, and Jira. My certifications in Azure Fundamentals and Google Cloud Big Data & Machine Learning Fundamentals further enhance my technical acumen. Winning the BELL Hackathon in 2024 highlights my innovative problem-solving abilities and teamwork.
+              <br /><br />  
+              What sets me apart is my ability to seamlessly integrate technical expertise with strategic project management, ensuring optimal performance and client satisfaction. I am eager to bring my skills and experience to a dynamic corporate environment where I can contribute to innovative solutions and drive business success. Let's connect to explore how I can add value to your team.
+            </p>
           </Animate>
           <Animate
             play
