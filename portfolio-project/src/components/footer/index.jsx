@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__left">
         <h4>Jay Ajudiya</h4>
-        <p>Java Developer | Passionate about Clean Code & Scalable Systems</p>
+        <p>Software Developer | Passionate about Clean Code & Scalable Systems</p>
       </div>
 
       <div className="footer__right">
@@ -15,7 +15,7 @@ const Footer = () => {
           <a href="https://github.com/Ajudiya-Jay" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub size={24} />
           </a>
-          <a href="https://linkedin.com/in/ajudiyajay" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/jay-patel-296727389/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin size={24} />
           </a>
           <a href="https://instagram.com/jay__.5222" target="_blank" rel="noopener noreferrer" aria-label="Instagram">

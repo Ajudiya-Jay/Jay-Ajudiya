@@ -14,32 +14,32 @@ const portfolioData = [
     id: 2,
     name: "Ecommerce",
     image: ImageOne,
-    link: "",
+    link: "https://www.linkedin.com/in/jay-patel-296727389/",
   },
   {
     id: 3,
     name: "Notes App",
-    link: "",
+    link: "https://www.linkedin.com/in/jay-patel-296727389/",
     image: ImageTwo,
   },
   {
     id: 2,
     name: "Supplier Design",
     image: ImageThree,
-    link: "",
+    link: "https://www.linkedin.com/in/jay-patel-296727389/",
   },
   {
     id: 2,
     name: "Todo App",
     image: ImageFour,
 
-    link: "",
+    link: "https://www.linkedin.com/in/jay-patel-296727389/",
   },
   {
     id: 3,
     name: "Shopping cart design",
     image: ImageFive,
-    link: "",
+    link: "https://www.linkedin.com/in/jay-patel-296727389/",
   },
 ];
 
